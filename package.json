@@ -1,0 +1,47 @@
+{
+  "name": "devlingo",
+  "displayName": "DevLingo",
+  "publisher": "Bhairavi",
+  "description": "Translate text inside VS Code (demo extension setup).",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:devLingo.helloWorld"
+  ],
+  "main": "./extension.js",
+
+  "contributes": {
+  "commands": [
+    {
+      "command": "devLingo.helloWorld",
+      "title": "devlingo translator"
+    }
+  ]
+},
+
+"repository": {
+    "type": "git",
+    "url": "https://github.com/Bhairavi-ancy/devlingo.git"
+  },
+
+ "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
