@@ -1,6 +1,6 @@
 # DevLingo
 
-🚀 Translate selected text inside VS Code using Microsoft Translator.
+Translate selected text inside VS Code using Microsoft Translator.
 
 ## Features
 
