@@ -14,22 +14,19 @@
     "onCommand:devLingo.helloWorld"
   ],
   "main": "./extension.js",
-
   "contributes": {
-  "commands": [
-    {
-      "command": "devLingo.helloWorld",
-      "title": "devlingo translator"
-    }
-  ]
-},
-
-"repository": {
+    "commands": [
+      {
+        "command": "devLingo.helloWorld",
+        "title": "devlingo translator"
+      }
+    ]
+  },
+  "repository": {
     "type": "git",
     "url": "https://github.com/Bhairavi-ancy/devlingo.git"
   },
-
- "scripts": {
+  "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "vscode-test"
@@ -42,6 +39,7 @@
     "eslint": "^9.0.0"
   },
   "dependencies": {
+    "dotenv": "^17.2.2",
     "node-fetch": "^3.3.2"
   }
 }
