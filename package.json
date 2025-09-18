@@ -27,6 +27,7 @@
     "url": "https://github.com/Bhairavi-ancy/devlingo.git"
   },
   "license": "MIT",
+  "icon": "images/devlingo.png",
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
