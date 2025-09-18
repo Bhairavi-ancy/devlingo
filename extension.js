@@ -12,7 +12,7 @@ dotEnv.config({
  */
 function activate(context) {
     let disposable = vscode.commands.registerCommand("devLingo.helloWorld", async function () {
-        vscode.window.showInformationMessage("DevLingo: Translating text...");
+        // vscode.window.showInformationMessage("DevLingo: Translating text...");
 
         console.log("processenv : ", process.env)
         
@@ -35,7 +35,7 @@ function activate(context) {
 
         const translatorKey = process.env.TRANSLATOR_KEY;
         if (!translatorKey) {
-            vscode.window.showErrorMessage("Translator key not found in environment variables.");
+            // vscode.window.showErrorMessage("Translator key not found in environment variables.");
             return;
         }
 
